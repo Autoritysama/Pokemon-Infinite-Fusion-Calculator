@@ -19,6 +19,7 @@ This Python script allows you to calculate the stats and type advantages of fuse
 
 
 ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/5c2e27e1-9280-47a9-90cf-7452db760079)
+
 If you get this error try to swap the Type 1 and Type 2 or remove verify that the typing is correctly written (WITH A UPPERCASE A THE BEGINNING)
 
 ## Requirements
