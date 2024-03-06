@@ -13,6 +13,13 @@ This Python script allows you to calculate the stats and type advantages of fuse
 - Assign weights to each stat to prioritize their importance in the search process.
 - Specify 0 for stats you don't care about and keep the weight at 1 for those stats.
 
+- ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/12092193-992e-4f83-991f-45d25a737663)
+
+- ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/be6b4588-55c9-4dac-8ea4-47399b066158)
+
+- ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/30fec83f-140e-4656-a31b-e68ae8611ddc)
+
+
 ## Requirements
 
 - Python 3.x
