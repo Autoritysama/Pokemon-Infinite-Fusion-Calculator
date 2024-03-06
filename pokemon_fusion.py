@@ -20,8 +20,8 @@ pokemon_data = None
 # Function to load the Excel files in the background
 def load_data_background():
     global fusions_df, pokemon_data
-    fusions_df = pd.read_excel('data/pokemon_fusions.xlsx')
-    pokemon_data = pd.read_csv('data/pokemon.csv')
+    fusions_df = pd.read_excel('pokemon_fusions.xlsx')
+    pokemon_data = pd.read_csv('pokemon.csv')
     # Cache the data after loading
     cache_data()
 
