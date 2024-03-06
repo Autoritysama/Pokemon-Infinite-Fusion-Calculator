@@ -26,7 +26,7 @@ pokemon_data = None
 # Function to load the Excel files in the background
 def load_data_background():
     global fusions_df, pokemon_data
-    with pyxlsb.open_workbook('pokemon_fusions.xlsb') as wb:
+    with pyxlsb.open_workbook('data/pokemon_fusions.xlsb') as wb:
         sheet_names = wb.sheet_names()
         if sheet_names:
             with wb.get_sheet(sheet_names[0]) as sheet:
@@ -465,28 +465,28 @@ def on_calculate():
         messagebox.showerror("Error", f"An error occurred: {e}")
 
 
-
 # Création de la fenêtre principale
 root = tk.Tk()
 root.title("Pokémon Fusion Calculator")
+root.geometry("400x500")  # Set the window size to 400x500 pixels
 
 # Ajout d'étiquettes pour les champs de saisie
 label_head = tk.Label(root, text="Head Pokémon")
-label_head.pack()
+label_head.pack(pady=(20, 0))  # Add some top padding
 entry_head = tk.Entry(root, width=30)
 entry_head.pack()
 
 label_body = tk.Label(root, text="Body Pokémon")
-label_body.pack()
+label_body.pack(pady=(10, 0))  # Add some top padding
 entry_body = tk.Entry(root, width=30)
 entry_body.pack()
 
 # Création du bouton de calcul
 button_calculate = tk.Button(root, text="Calculate", command=on_calculate)
-button_calculate.pack()
+button_calculate.pack(pady=(20, 0))  # Add some top padding
 
 search_button = tk.Button(root, text="Search Fusions", command=search_fusions)
-search_button.pack()
+search_button.pack(pady=(10, 0))  # Add some top padding
 
 # Création des zones de texte pour les résultats
 result_stats = tk.StringVar()
@@ -499,8 +499,11 @@ label_result_type.pack()
 
 # Creating a button for swapping head and body input values
 swap_button = tk.Button(root, text="Swap & Recalculate", command=swap_and_recalculate)
-swap_button.pack()
+swap_button.pack(pady=(20, 0))  # Add some top padding
 
+# Adding the author label at the bottom right
+label_author = tk.Label(root, text="Made by Autoritysama")
+label_author.pack(side=tk.RIGHT, padx=10, pady=10, anchor=tk.SE)
 
 # Lancement de la boucle principale de tkinter
-root.mainloop() 
+root.mainloop()
