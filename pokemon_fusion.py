@@ -8,13 +8,15 @@ import os
 from tkinter import ttk
 import os
 import gdown
+import openpyxl
+import time
+import pyxlsb
 
-# Create the data directory if it doesn't exist
-os.makedirs('data', exist_ok=True)
+max_retries = 3
+retry_delay = 5
 
-# Download the file from Google Drive
-url = 'https://drive.google.com/uc?id=1QF-Y3Mrqb2f2FxCLeYhY8cRrVRXx77Rz'
-output = 'data/pokemon_fusions.xlsx'
+url = 'https://drive.google.com/uc?id=1VFULD5ZklHLMsElG368Q76A7_vM5kWen'
+output = 'pokemon_fusions.xlsb'  # Change the file extension to .xlsb
 gdown.download(url, output, quiet=False)
 
 # Initialize the variables
@@ -24,7 +26,11 @@ pokemon_data = None
 # Function to load the Excel files in the background
 def load_data_background():
     global fusions_df, pokemon_data
-    fusions_df = pd.read_excel('data/pokemon_fusions.xlsx')
+    with pyxlsb.open_workbook('pokemon_fusions.xlsb') as wb:
+        sheet_names = wb.sheet_names()
+        if sheet_names:
+            with wb.get_sheet(sheet_names[0]) as sheet:
+                fusions_df = pd.DataFrame(sheet.rows(), columns=next(sheet.rows()))
     pokemon_data = pd.read_csv('data/pokemon.csv')
     # Cache the data after loading
     cache_data()
