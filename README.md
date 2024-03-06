@@ -17,11 +17,76 @@ This Python script allows you to calculate the stats and type advantages of fuse
 ## Fusion Stat Calculator - Main Menu
 ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/12092193-992e-4f83-991f-45d25a737663)
 
+Look at the excel file pokemon.csv to find all the Pokemon available and their names. Sometime spelling can be different for Pokemon like Aegislash and some others.
+
+To calculate the stats and type information for a fused Pokémon, follow these steps:
+
+1. Enter the names of the Head Pokémon and Body Pokémon in their respective fields.
+   - Make sure the names are spelled correctly and match the capitalization used in the Pokémon games.
+
+2. Click the "Calculate" button to generate the results.
+
+3. The calculated stats for the fused Pokémon will be displayed, including:
+   - HP, Attack, Defense, Sp. Atk, Sp. Def, and Speed
+
+4. The type information for the fusion will also be shown, including:
+   - Primary Type (Type 1) and Secondary Type (Type 2)
+   - Weaknesses (2x and 4x)
+   - Resistances (0.5x and 0.25x)
+   - Immunities
+
+5. If you want to quickly swap the Head and Body Pokémon and recalculate the results, click the "Swap & Recalculate" button.
+
+For more advanced searching capabilities, click the "Search Fusions" button to access the Fusion Search Criteria interface.
+
 ## Fusion Search Criteria 
 ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/be6b4588-55c9-4dac-8ea4-47399b066158)
 
+When entering your search criteria, please ensure that the names of Pokémon and types are spelled correctly with proper capitalization (e.g., "Garchomp", "Dragon").
+
+- Target Stats:
+  - Enter the desired values for each stat (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed).
+  - Use 0 for stats you don't have a preference for.
+  - Adjust the weights (1-10) to prioritize the importance of each stat in the search.
+
+- Lock Head/Body/Any:
+  - Specify a Pokémon name to lock in the head, body, or either position of the fusion.
+
+- Num Results:
+  - Choose the number of fusion results to display.
+
+- Type 1/2:
+  - Enter the desired primary and secondary types for the fusion.
+
+- No Legendary:
+  - Check this box to exclude legendary Pokémon from the results.
+
+- Exclude Mega Evolutions:
+  - Check this box to exclude Mega Evolutions from the results.
+
+- Exclude Pokémon:
+  - Enter the names of any Pokémon to exclude, separated by commas.
+
+After filling in your search criteria, click "Submit" to view the closest matching fusions. The results will be sorted based on the specified target stats and weights. Click on the column headers to sort the results as needed.
+
 ## Fusion Search Results
 ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/30fec83f-140e-4656-a31b-e68ae8611ddc)
+
+After performing a search using the Fusion Search Criteria, the results will be displayed in the Fusion Results window. This screen presents the closest matching fusions based on your specified criteria.
+
+- The results are shown in a table format, with each row representing a unique fusion.
+- The columns display various information about each fusion, including:
+  - Head: The Pokémon used as the head of the fusion
+  - Body: The Pokémon used as the body of the fusion
+  - Type 1 and Type 2: The primary and secondary types of the fusion
+  - HP, Attack, Defense, Sp. Atk, Sp. Def, Speed: The individual stats of the fusion
+  - Total Stats: The sum of all the individual stats
+
+- By default, the results are sorted based on the closeness to the target stats and weights you specified in the search criteria.
+- However, you can easily sort the results based on any of the columns by clicking on the respective column header.
+  - Clicking once will sort the column in ascending order.
+  - Clicking again will sort the column in descending order.
+  - This allows you to quickly analyze and compare the fusions based on specific stats or attributes.
 
 ## Errors
 ![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/5c2e27e1-9280-47a9-90cf-7452db760079)
