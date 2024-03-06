@@ -154,3 +154,5 @@ Note: The script relies on the data from the `pokemon_fusions.xlsx` and `pokemon
 ![310356803-6003bbe7-0dd3-4ca9-8e4d-b78d781f42f2 (1)](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/e6a56d4a-9f66-4e59-b483-7035ac6983a7)
 
 If you find this Pokémon Fusion Calculator helpful and would like to support its development, you can buy me a coffee! Your contribution will be greatly appreciated and will help me continue improving the project
+
+https://www.buymeacoffee.com/autoritysama
