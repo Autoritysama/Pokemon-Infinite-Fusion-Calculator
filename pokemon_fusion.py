@@ -6,6 +6,15 @@ import threading
 import pickle
 import os
 from tkinter import ttk
+import gdown
+
+# Create the data directory if it doesn't exist
+os.makedirs('data', exist_ok=True)
+
+# Download the file from Google Drive
+url = 'https://drive.google.com/uc?id=1QF-Y3Mrqb2f2FxCLeYhY8cRrVRXx77Rz'
+output = 'data/pokemon_fusions.xlsx'
+gdown.download(url, output, quiet=False)
 
 # Initialize the variables
 fusions_df = None
