@@ -1,6 +1,6 @@
 # Pokemon Infinite Fusion Calculator
 
-![image](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/08b8897a-84a1-466f-ad8c-4bd383268588)
+![310357300-08b8897a-84a1-466f-ad8c-4bd383268588 (1)](https://github.com/Autoritysama/Pokemon-Infinite-Fusion-Calculator/assets/121148901/648d52b1-ecaa-4948-8453-bb230fe9aa46)
 
 This Python script allows you to calculate the stats and type advantages of fused Pokémon and search for the closest matching fusions based on target stats and various filtering options.
 
