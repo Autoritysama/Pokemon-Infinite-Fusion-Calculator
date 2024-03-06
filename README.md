@@ -9,8 +9,6 @@ This Python script allows you to calculate the stats and type advantages of fuse
 - Calculate the stats (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed) of a fused Pokémon based on the head and body Pokémon.
 - Determine the type, weaknesses, resistances, and immunities of the fused Pokémon.
 - Search for the closest matching fusions based on target stats and filtering criteria.
-- User-friendly tkinter interface for inputting Pokémon and displaying results.
-- Utilizes pandas for data manipulation and analysis.
 - Sort the search results by clicking on the stats column headers in ascending or descending order.
 - Assign weights to each stat to prioritize their importance in the search process.
 - Specify 0 for stats you don't care about and keep the weight at 1 for those stats.
