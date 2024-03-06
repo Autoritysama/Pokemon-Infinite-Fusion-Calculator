@@ -1,4 +1,11 @@
 pandas
 tkinter
+math
+threading
+pickle
+os
+ttk
 gdown
+openpyxl
+time
 pyxlsb
